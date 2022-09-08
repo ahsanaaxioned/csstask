@@ -1,10 +1,10 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Css task</title>
+  <title>CSS Task</title>
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
@@ -13,10 +13,10 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -24,23 +24,194 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <nav id="navbar">
+        <ul class="navbarlist">
+          <li><a href="#FIXME">Home</a></li>
+          <li><a href="#FIXME">plans</a></li>
+          <li><a href="#FIXME">About</a></li>
+          <li><a href="#FIXME">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <!--header section start-->
+    <!--header section end-->
     <!--main section start-->
     <main>
-
+      <!-- home section start -->
+      <section class="home" id="home">
+        <h1>Marketing</h1>
+        <p>Template by w3.css</p>
+        <div class="wrapper">
+          <ul class="slide-list">
+            <li>
+              <figure><img src="https://dummyimage.com/1250x452/d918d9/fff.jpg" alt="slider image">
+                <figcaption>blorum pipsum</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure><img src="https://dummyimage.com/1250x452/d918d9/fff.jpg" alt="slider image">
+                <figcaption>blorum pipsum</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure><img src="https://dummyimage.com/1250x452/d918d9/fff.jpg" alt="slider image">
+                <figcaption>blorum pipsum</figcaption>
+              </figure>
+            </li>
+          </ul>
+          <div class="slidedown">
+            <a href="#FIXME" title="next slide" class="left">left slide</a>
+            <a href="#FIXME" title="next slide" class="right">right slide</a>
+          </div>
+          <div class="slide-btn">
+            <button class="btn">slider button</button>
+            <button class="btn">slider button</button>
+            <button class="btn">slider button</button>
+          </div>
+        </div>
+        </secttion>
+        <!-- home section end -->
+        <!-- plan section start -->
+        <section class="plans" id="plans">
+          <h2>what we offer <span>border bottom</span></h2>
+          <ul class="plan-list">
+            <li>
+              <h3>Design</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, iste?</p>
+            </li>
+            <li>
+              <h3>Branding</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, iste?</p>
+            </li>
+            <li>
+              <h3>Consultation</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, iste?</p>
+            </li>
+            <li>
+              <h3>Promises</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, iste?</p>
+            </li>
+          </ul>
+        </section>
+        <!-- plan section end -->
+        <!-- price section start -->
+        <section class="price">
+          <h2>pricing plans</h2>
+          <p class="para">choose a pricing plan that fits your needs</p>
+          <ul class="price-list">
+            <li>
+              <h4>Basic</h4>
+              <p><span>10Gb</span> Storage</p>
+              <p><span>10</span> Emails</p>
+              <p><span>10</span> Domains</p>
+              <p><span>Endless</span> Support</p>
+              <p class="para-span"><span>$ 10</span> per month</p>
+              <div class="link"><a href="#FIXME">SignUp</a></div>
+            </li>
+            <li>
+              <h4 class="grey">Pro</h4>
+              <p><span>25Gb</span> Storage</p>
+              <p><span>25</span> Emails</p>
+              <p><span>25</span> Domains</p>
+              <p><span>Endless</span> Support</p>
+              <p class="para-span"><span>$ 25</span> per month</p>
+              <div class="link"><a href="#FIXME">SignUp</a></div>
+            </li>
+            <li>
+              <h4>Premium</h4>
+              <p><span>50Gb</span> Storage</p>
+              <p><span>50</span> Emails</p>
+              <p><span>50</span> Domains</p>
+              <p><span>Endless</span> Support</p>
+              <p class="para-span"><span>$ 50</span> per month</p>
+              <div class="link"><a href="#FIXME">SignUp</a></div>
+            </li>
+          </ul>
+        </section>
+        <!-- price section end -->
+        <!-- about section start -->
+        <section class="about" id="about">
+          <h2>Who We Are<span></span></h2>
+          <article>
+            <ul class="about-list">
+              <li>
+                <figure>
+                  <img src="https://dummyimage.com/400x269/ffd4ff/fff.png" alt="Jane Doe">
+                </figure>
+                <h4>Jane Doe</h4>
+                <h5>CEO & Founder</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore?</p>
+                <button>Contact</button>
+              </li>
+              <li>
+                <figure>
+                  <img src="https://dummyimage.com/400x269/0d020d/fff.png" alt="Mike Ross">
+                </figure>
+                <h4>Mike Ross</h4>
+                <h5>Art Director</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore?</p>
+                <button>Contact</button>
+              </li>
+              <li>
+                <figure>
+                  <img src="https://dummyimage.com/400x269/ffd4ff/fff.png" alt="John Doe">
+                </figure>
+                <h4>John Doe</h4>
+                <h5>Designer</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, inventore?</p>
+                <button>Contact</button>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <!-- about section end -->
+        <!-- contact section start -->
+        <section class="contact" id="contact">
+          <h2>Contact Us <span></span></h2>
+          <form action="#FIXME" class="form" method="get">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="input-group">
+              <label for="Subject">Subject</label>
+              <input type="text" name="text" id="subject">
+            </div>
+            <div class="input-group">
+              <label for="message">Message</label>
+              <input type="text" name="text" id="Message">
+            </div>
+            <div class="input-control">
+              <button value="send">Send</button>
+            </div>
+          </form>
+        </section>
+        <!-- contact section end -->
     </main>
     <!--main section end-->
-
     <!--footer section start-->
-    <footer>      
-
+    <footer>
+      <h5>Footer</h5>
+      <!-- to the top will be given by before method  -->
+      <div class="top"><span>to the top</span></div>
+      <ul class="social-icon-list">
+        <li><a href="#FIXME" target="_blank" class="social-icon facebook">Facebook</a></li>
+        <li><a href="#FIXME" target="_blank" class="social-icon instagram">Instagram</a></li>
+        <li><a href="#FIXME" target="_blank" class="social-icon snapchat">Snapchat</a></li>
+        <li><a href="#FIXME" target="_blank" class="social-icon pinterest">Pinterest</a></li>
+        <li><a href="#FIXME" target="_blank" class="social-icon twitter">Twitter</a></li>
+        <li><a href="#FIXME" target="_blank" class="social-icon linkedin">Linkedin</a></li>
+      </ul>
+      <div class="copy">
+        <a href="#FIXME" target="_blank">powered by w3.css</a>
+      </div>
     </footer>
     <!--footer section end-->
-
   </div>
   <!--container end-->
-  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
