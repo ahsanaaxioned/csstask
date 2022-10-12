@@ -1,7 +1,6 @@
 // global variable declaration start here
 let a = 0;
 let item = document.querySelectorAll(".slide-item");
-console.log(item, "item here");
 let left = document.querySelector(".left");
 let right = document.querySelector(".right");
 let btn = document.querySelectorAll(".btn");
@@ -20,7 +19,7 @@ function slideShow() {
 };
 // slider function end here
 
-// even for slider start here
+// event for slider start here
 left.addEventListener("click", function () {
     a--;
     if (a < 0) {
@@ -35,7 +34,7 @@ right.addEventListener("click", function () {
     };
     slideShow();
 });
-// even for slider end here
+// event for slider end here
 
 // slider button event start here
 btn.forEach(function (ele, i) {
@@ -58,7 +57,7 @@ topp.addEventListener("click",function(){
         behavior: 'smooth'
       });
 });
-// window scroll event start here
+// window scroll event end here
 
 
 
