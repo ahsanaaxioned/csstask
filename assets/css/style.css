@@ -260,12 +260,15 @@ li {
 
 .slide-list figure img {
   width: 100%;
-  height: 600px;
+  min-height: 600px;
 }
 
-.slide-list li:nth-child(2), 
-.slide-list li:nth-child(3) {
+.slide-item{
   display: none;
+}
+
+.active{
+  display: block;
 }
 
 figure{
@@ -307,6 +310,13 @@ figure figcaption {
   font-size: 25px;
   border: 1px solid;
   margin-left: 15px;
+  transition: all .3s ease;
+}
+
+.left:hover::before,
+.right:hover::before{
+  background-color: #616161;
+  color: #fff;
 }
 
 .slidedown .right {
@@ -335,16 +345,17 @@ figure figcaption {
 }
 
 .btn{
-  
-  text-indent: -9999px;
+  border: 1px solid #fff;
+  background-color: #616161;
   margin: 5px;
-  border: 1px solid white;
+  text-indent: -9999px;
 }
 
-.btn:nth-child(1),
-.btn:nth-child(2){
-background-color: #616161;
+.btn-active,
+.btn:hover{
+  background-color: #fff;
 }
+
 
 .plans h2{
   text-align: center;
@@ -481,7 +492,9 @@ color: #61625f;
 }
 
 .price-list li a:hover{
-  background-color: #e7410f;
+  border: 1px solid #459E48;
+  background-color: #F7FCFE;
+  color: #459E48;
 }
 
 .price-list li .link{
@@ -600,16 +613,19 @@ color: #61625f;
     }
 
     .contact .input-control button{
-      text-align: center;
-      font-size: 20px;
       padding: 10px;
-      background-color: #000000;
+      border: 1px solid transparent;
+      background-color: #000;
       color: #F7FCFE;
+      font-size: 20px;
+      text-align: center;
+      transition: all .3s ease;
     }
 
     .contact .input-control button:hover{
-      background-color: #459E48;
-      color: #fff;
+      border: 1px solid #000;
+      background-color: #F7FCFE;
+      color: #000;
     }
 /*=================================
   main styling ends here
@@ -627,7 +643,7 @@ footer h5{
   padding: 55px 0 35px 0;
   color: #251138;
 }
-footer span::before{
+.top-span::before{
   content: "\f062";
   font-family: "FontAwesome";
   text-align: center;
@@ -638,15 +654,19 @@ footer .top{
   cursor: pointer;
 }
 
-footer span{
-  background-color: black;
-  color: white;
+.top-span{
   padding: 15px 30px;
+  border: 1px solid transparent;
+  background-color: #000;
+  color: #fff;
   text-transform: capitalize;
+  transition: all .3s ease;
 }
 
-footer span:hover{
-  background-color: #459E48;
+.top-span:hover{
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
 }
 
 footer .social-icon{
@@ -664,37 +684,18 @@ footer .social-icon{
   font-family: "FontAwesome";
   text-indent: 0;
   float: right;
+  color: #000;
   font-size: 30px;
+  transition: all .3s ease;
 }
 
-.facebook::before{ 
-  content: "\f082";
-  color: #000;
-}
- 
-.instagram::before{
-  content: "\f16d";
-  color: #000;
-}
-.snapchat::before{
-  content: "\f2ad";
-  color: #000;
-}
-.pinterest::before{
-  content: "\f231";
-  color: #000;
-}
-.twitter::before{
-  content: "\f099";
-  color: #000000;
-}
-.linkedin::before{
-  content: "\f0e1";
-  color: #000;
-}
-footer .copy{
-  text-align: center;
-}
+.facebook::before{  content: "\f082"; }
+.instagram::before{ content: "\f16d"; }
+.snapchat::before{  content: "\f2ad"; }
+.pinterest::before{  content: "\f231"; }
+.twitter::before{content: "\f099"; }
+.linkedin::before{ content: "\f0e1"; }
+footer .copy{ text-align: center; }
 footer .copy a{
   color: #323333;
   font-size: 20px;
@@ -706,12 +707,8 @@ footer .copy a{
 .pinterest:hover::before,
 .twitter:hover::before,
 .linkedin:hover::before{
-color: #183153;
+color:#135bc0;
 }
 /*=================================
   footer styling ends here
 =================================*/
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {}
