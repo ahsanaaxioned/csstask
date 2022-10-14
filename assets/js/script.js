@@ -8,7 +8,7 @@ let topp = document.querySelector(".top");
 // global variable declaration end here
 
 // slider function start here
-function slideShow() {
+function slideShow(a) {
     let togg = document.querySelector(".active");
     togg.classList.remove("active");
     item[a].classList.add("active");
@@ -25,14 +25,14 @@ left.addEventListener("click", function () {
     if (a < 0) {
         a = item.length - 1;
     };
-    slideShow();
+    slideShow(a);
 });
 right.addEventListener("click", function () {
     a++;
     if (a > item.length - 1) {
         a = 0;
     };
-    slideShow();
+    slideShow(a);
 });
 // event for slider end here
 
@@ -46,6 +46,7 @@ btn.forEach(function (ele, i) {
             li.classList.remove("active");
         };
         item[i].classList.add("active");
+        a=i;
     });
 });
 // slider button event end here
