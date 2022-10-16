@@ -8,7 +8,7 @@ let index = 0;
 // global variable declaration end here
 
 // slider function start here
-function slideShow(index) {
+function setSlide(index) {
     const toggle = document.querySelector(".active");
     toggle.classList.remove("active");
     listItem[index].classList.add("active");
@@ -24,19 +24,19 @@ left.addEventListener("click", function () {
     if (index < 0) {
         index = listItem.length - 1;
     };
-    slideShow(index);
+    setSlide(index);
 });
 right.addEventListener("click", function () {
     index++;
     if (index > listItem.length - 1) {
         index = 0;
     };
-    slideShow(index);
+    setSlide(index);
 });
 // event for slider end here
 
 // slider button event start here
-function addClass() {
+function removeClass() {
     for (let li of listItem) {
         li.classList.remove("active");
     };
@@ -47,7 +47,7 @@ btn.forEach(function (ele, i) {
         btnActive.classList.remove("btn-active");
         btn[i].classList.add("btn-active");
         index = i;
-        addClass();
+        removeClass();
         listItem[i].classList.add("active");
     });
 });
