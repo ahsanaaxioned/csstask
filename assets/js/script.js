@@ -19,6 +19,7 @@ function setSlide(index) {
 // slider function end here
 
 // event for slider start here
+if(left){
 left.addEventListener("click", function () {
     index--;
     if (index < 0) {
@@ -26,6 +27,8 @@ left.addEventListener("click", function () {
     };
     setSlide(index);
 });
+};
+if(right){
 right.addEventListener("click", function () {
     index++;
     if (index > listItem.length - 1) {
@@ -33,6 +36,7 @@ right.addEventListener("click", function () {
     };
     setSlide(index);
 });
+};
 // event for slider end here
 
 // slider button event start here
@@ -41,6 +45,7 @@ function removeClass() {
         li.classList.remove("active");
     };
 }
+if (btn){
 btn.forEach(function (ele, i) {
     ele.addEventListener("click", function () {
         const btnActive = document.querySelector(".btn-active");
@@ -51,14 +56,17 @@ btn.forEach(function (ele, i) {
         listItem[i].classList.add("active");
     });
 });
+};
 // slider button event end here
 
 // window scroll event start here
+if(topp){
 topp.addEventListener("click", function () {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
 });
+};
 // window scroll event end here
 
